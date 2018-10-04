@@ -26,12 +26,12 @@ At this point the key has been created and it’s located in /home/ssg/.ssh. Wit
 
 This problem stumped me at first. I just wasn’t sure how to copy the the id_rsa.pub file from one system to another. I started trying to use tools that I already knew, like the scp command and FTP servers. Using an FTP server seemed way too complicated for something as minor as this, but using scp seemed plausible. However, I soon learned that the Pico webshell was not going to cooperate. So what I finally decided to do was simply copy the public key over using my laptop’s shared clipboard, as follows:
 ```	
-	\[on home system\]
+	[on home system]
 	$ cat id_rsa.pub
 	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRPvWsRP4Pt+eYP1EHMNL1UZAMTWjqXZg74AKFOn/	Dj7HRRa7YxuBgoUKtHpF1lJDTt3BxoNQeqaAWf/eznqq9PyaD9dYgJalgIDLwdU8jCtsM7aDX/G3qmNboM08ZG3W0ZEC9uQyuPXhjbPpR2v5jJNuLN8KIBCnrhIFb/NnXqxK64qI9rwafyMLvKu3t0RyAojCtNPEt1xvSWKor9+8+978iiPwWYQ/P3bLKg8dezgMxh3JpAp8WwWlQ4g3IiEbwYfhOZlmf6R7SKFPFXcW2t1EMCn793FMHiZ0Rn5Jlz4CSr/fpltvobUaCMtkLVvFdE1o5eincZHW0uY2UwkeX ssg@DESKTOP-8J9L2GB (copy this string)
 ```
 ```
-	\[on Pico webshell\]
+	[on Pico webshell]
 	$ mkdir .ssh
 	$ cd .ssh
 	$ mkdir authorized_keys
