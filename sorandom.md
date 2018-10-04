@@ -1,6 +1,6 @@
 This is a Level 2 problem. The prompt is as follows:
 
-> We found sorandom.py running at shell2017.picoctf.com:27691. It seems to be outputting the > flag but randomizing all the characters first. Is there anyway to get back the original flag?
+> We found sorandom.py running at shell2017.picoctf.com:27691. It seems to be outputting the flag but randomizing all the characters first. Is there anyway to get back the original flag?
 >
 > HINTS:
 > How random can computers be?
